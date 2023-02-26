@@ -1,6 +1,6 @@
 # simple-giphy-api-example
 
-Using [Giphy API](https://developers.giphy.com/docs/api/) with Async & Await
+Using [Giphy API](https://developers.giphy.com/docs/api/) with Async & Await and [Skeleton](http://getskeleton.com/) framework
 
 config.js
 
