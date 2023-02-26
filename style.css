@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  /* grid-template-columns: 0fr 0fr;
+  grid-template-areas: 'a b'; */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.buttons {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  font-size: 1.2rem;
+  align-items: center;
+  height: 100%;
+  /* grid-area: a; */
+}
+.buttons .searchGif {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 10px;
+  border-top: 3px solid rgba(218, 218, 218, 0.588);
+  border-bottom: 3px solid rgba(218, 218, 218, 0.588);
+}
+.buttons input,
+.buttons button {
+  margin: 0;
+}
+
+.giphy {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  /* grid-area: b; */
+}
+.giphy .theGif {
+  display: flex;
+}
+.giphy .theGif img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#clearBtn {
+  color: red;
+  border: 1px solid rgba(255, 0, 0, 0.516);
+  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+#clearBtn:hover {
+  background: rgb(255, 108, 108);
+  color: white;
+}
+
+@media all and (min-width: 1200px) {
+  .giphy .theGif img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  .buttons {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.2rem;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.809);
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* grid-area: a; */
+  }
+  .buttons .searchGif {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+    border: 0;
+  }
+  .giphy {
+    margin-top: 150px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* grid-area: b; */
+  }
+}
+@media all and (max-width: 810px) {
+  .buttons {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    position: fixed;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.809);
+    font-weight: 500;
+    height: auto;
+    padding-bottom: 10px;
+    /* grid-area: a; */
+  }
+  .buttons button {
+    color: white;
+  }
+}
