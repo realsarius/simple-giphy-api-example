@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: #2d2d2d;
 }
 .container {
   display: flex;
@@ -8,6 +9,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
+  color: white;
 }
 .buttons {
   display: flex;
@@ -29,6 +31,21 @@ body {
   gap: 10px;
   border-top: 3px solid rgba(218, 218, 218, 0.588);
   border-bottom: 3px solid rgba(218, 218, 218, 0.588);
+}
+.buttons input {
+  background: #ababab;
+  font-size: 1.5rem;
+  color: black;
+}
+.buttons button {
+  color: white;
+  font-size: 1.3rem;
+  border: 2px #8d2663 solid;
+  color: #ffffff;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.buttons button:hover {
+  background: #8d2663;
 }
 .buttons input,
 .buttons button {
@@ -55,7 +72,7 @@ body {
 #clearBtn {
   color: red;
   border: 1px solid rgba(255, 0, 0, 0.516);
-  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 #clearBtn:hover {
   background: rgb(255, 108, 108);
